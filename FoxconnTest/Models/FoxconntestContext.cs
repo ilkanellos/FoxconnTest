@@ -14,6 +14,7 @@ namespace FoxconnTest.Models
             optionsBuilder.UseSqlite(@"data source=""FoxconnTest.db""");
         }
 
+        // Method to create the Employee model based on the parameters retrieved by the SQLite database, using Microsoft Entity Framework.        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Employees>(entity =>
